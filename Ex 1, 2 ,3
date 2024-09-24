@@ -1,0 +1,26 @@
+# Ex 1
+integer_var=52
+float_var=1.23
+string_var="aboba"
+list_var=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+tuple_var=(10 ,20, 30)
+dick_var={"Zxc", 77}
+set_var=(3, 2, 1)
+bool_var=True
+print (integer_var, float_var, string_var, list_var, tuple_var, dick_var, set_var, bool_var)
+# Ex 2
+name="Ivanich"
+age="18"
+average_grade=4
+favorite_movies=["The Crow"]
+personal_info=["Sviridov", 20, 4,5]
+skills={"run, 100"}
+visited_countries={"no, patriot"}
+has_driver_licens=False
+print (name, age, average_grade, favorite_movies, personal_info, skills, visited_countries, has_driver_licens)
+# Ex 3
+processor="intel"
+ram=16
+internet_speed=100000
+pc=[processor,ram, internet_speed]
+print(pc)
