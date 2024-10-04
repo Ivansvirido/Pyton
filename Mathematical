@@ -1,0 +1,69 @@
+#ex 1
+a = 5
+b =10
+
+a = b
+b = 20
+print ("a:", a)
+print ("b:", b)
+
+#ex 2
+x = 7
+y =3
+z =0
+
+sum = x+y
+print(sum)
+
+dif = x-y
+print(dif)
+
+rem = x%y
+print(rem)
+
+div=x//y
+print(div)
+
+power=x**y
+print(power)
+
+z=x**2-(x*y)
+print(z)
+
+
+#ex 3
+m=8
+n=4
+
+m=m+n
+print(m)
+
+n=m*2
+print(n)
+
+
+m=n%m
+print(m)
+
+n=n-m
+print(n)
+
+#ex4
+
+a=12
+b=8
+c=12
+
+print(a>b)
+print(a<b)
+print(a==b)
+print(a!=b)
+print(a>=b)
+print(a<=b)
+
+#ex5
+
+backpack =['ручка','карандашь' , 'тетрадь' , 'учебник', 'фломастер', 'линейка', 'ластик']
+print('карандашь' in backpack )
+print('яблоко' in backpack)
+print(len(backpack))
