@@ -1,0 +1,40 @@
+#Ex 1
+age = int(input())
+if age<18:
+    print("Вы малой")
+elif age > 18 and age <= 65:
+    print("Вы трудоспособный человек")
+else:
+    print("Вы дед")
+
+#Ex 3
+n1 = float(input("Первое число "))
+n2 = float(input("Второе число"))
+op= input("Операция(+,-, *, /):")
+
+if op == "+":
+    res = n1 + n2
+elif op == "-":
+    res = n1 - n2
+elif op == "*":
+    res = n1 * n2
+elif op == "/":
+    if n2 == 0:
+        print("Ошибка: деление на ноль(тупой)")
+    else:
+        res = n1 / n2
+else:
+    print("Ошибка: неверная операция")
+
+print(f"{n1} {op} {n2} = {res}")
+
+#Ex 5
+password_correct = '123456789'
+while True:
+    password = input("Введите пароль:")
+
+    if password == password_correct:
+        print("Верный пароль. Вход разрешен.")
+        break
+    else:
+        print("Пароль неправильный. Попробуйт ёщё раз...")
