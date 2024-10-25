@@ -38,3 +38,58 @@ for i, x in enumerate(tasks, start=1):
         print(f"{i}!: {x} ")
     else:
         print(f"{i} : {x}")
+
+
+#Ex 6
+num_c = int(input("Сколько чисел вы хотите ввести? "))
+nums = []
+sum = 0
+for x in range(num_c):
+    number = float(input("Введите число: "))
+    nums.append(number)
+    sum += number
+print("Список всех введённых чисел:", nums)
+print("Сумма всех чисел:", sum)
+
+
+#Ex 7
+counter = 1
+while counter <= 10:
+    print(f" Цикл сработал {counter}") 
+    counter += 1
+
+
+#Ex 8
+while True:
+    com = input("Введите команду (w - вперед, a - влево, s - назад, d - вправо, stop - выйти): ")
+
+    if com == "w":
+        print("Персонаж идет вперед.")
+    elif com == "a":
+        print("Персонаж идет влево.")
+    elif com == "s":
+        print("Персонаж идет назад.")
+    elif com == "d":
+        print("Персонаж идет вправо.")
+    elif com == "stop":
+        print("Программа остановлена.")
+        break
+    else:
+        print("Неизвестная команда! Попробуйте снова.")
+
+
+#Ex 9
+while True:
+    try:
+        num = int(input("Введите число от 1 до 9: "))
+        if 1 <= num <= 9:
+            break
+        else:
+            print("Число вне диапазона. Пожалуйста, попробуйте снова.")
+    except ValueError:
+        print("Некорректный ввод. Пожалуйста, введите целое число.")
+print(f"Таблица умножения для числа {num}:")
+for x in range(1, 11):
+    res = num * x
+    print(f"{num} x {x} = {res}")
+
